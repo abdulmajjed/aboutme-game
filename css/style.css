@@ -1,0 +1,42 @@
+
+head{
+font: size 50px; 
+text-align: center;
+
+}
+body{
+    color: rgb(14, 1, 1);
+}
+body nav ul li {
+    
+    display: inline-block;
+    margin-left: 200px;
+    background-color:rgba(92, 40, 40, 0.616) ;
+
+}
+header nav{
+    float:right;
+    width: 40%;
+    margin-top: 5px;
+    font-size: 25px;
+   color:rgb(92, 41, 0);
+}
+header main ol li{
+    color: rgb(92, 41, 0);
+    background-color:  #a6a6a4;
+    height: 20px;
+    }
+
+footer{
+    height: 20px;
+    color: rgb(124, 16, 4);
+    background-color: rgba(201, 201, 201, 0.87);
+}
+
+ footer p{
+    font-size: 20px;
+    text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      font-weight: 800;
+}
