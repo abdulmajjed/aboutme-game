@@ -3,7 +3,7 @@
 ## LAB - 2
 __________
 
-### Personal Information:
+### ► Personal Information:
 
 - Nationality:          Jordanian  
 - Date of Birth:        January-13-1998	 	

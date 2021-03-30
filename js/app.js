@@ -4,30 +4,38 @@
   let userName=prompt('what\'s your name ?');
  alert(' Hello '  +userName+  ' my name\'s Abdulmajjed!'); 
  userName=(userName.toLowerCase());
-
+alert('let\'s try to have some fun!')
   let place=prompt('I\'m from Jordan, are you?');
   place=(place.toLowerCase());
 
+let score=0;
+if(place==='yes' || place==='y'){
+    score++;
+}else(place==='no' || place==='n')
+    score--;
 
+// place=(place.toLowerCase());
 
- let age=prompt('what\'s your age?');
+ let age=prompt('whats your age?');
 //  console.log('before',typeof age);
    age=parseInt(age);
 //  console.log('after'+age, typeof age);
 
 
+
 if(place=='yes'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
-
-} else if (place=='no'){
+    score++;
+}
+else if(place=='no'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );
 
 }
 
 if(place=='y'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
-
-} else if (place=='n'){
+    score++;
+}else if(place=='n'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );
 
 }
@@ -35,23 +43,25 @@ if(place=='y'){
 
 
 
- let nesCafe=prompt('Is NesCafe my favorite Coffie? ');
+ let nesCafe=prompt('Is NesCafe my favorite Coffie?');
 //  console.log(nesCafe);
- nesCafe=(nesCafe.toLowerCase());
+nesCafe=(nesCafe.toLowerCase());
 
  if(nesCafe=='yes'){
     alert('OMG,got me !!' );
-
-} else if (nesCafe=='no'){
+    score++;
+}else if(nesCafe=='no'){
     alert('its really my favorite' );
+    score--;
 
 }
 
 if(nesCafe=='y'){
     alert('OMG,got me !!' );
-
-} else if (place=='n'){
+    score++;
+}else if(place=='n'){
     alert('its really my favorite ' );
+    score--;
 
 }
 
@@ -61,38 +71,42 @@ if(nesCafe=='y'){
 
 
  if(mnsf=='yes'){
-    alert('So on Friday Ill come to you  !!' );
-
-} else if (place=='no'){
-    alert('okay, then Friday nice day to meet you and eat Mansaf !! ' );
+    alert('correct, So on Friday Ill come to you  !!' );
+    score++; 
+}else if(place=='no'){
+    alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
+    score--;
 
 }
 
 if(mnsf=='y'){
-    alert('So on Friday Ill come to you  !!' );
-
-} else if (place=='n'){
-    alert('okay, then Friday nice day to meet you !! ' );
+    alert('correct,So on Friday Ill come to you  !!' );
+    score++;
+}else if(place=='n'){
+    alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
+    score--;
 
 }
 
  let happy=prompt('If i got 10 out of 10, you think im happy or not?');
-// console.log(happy);
- happy=(happy.toLowerCase());
 
+ happy=(happy.toLowerCase());
+// console.log(happy);
  if(happy=='yes'){
     alert('Im so happy for me!!' );
-
-} else if (happy=='no'){
+    score++;
+}else if(happy=='no'){
     alert('Its worries dude, im sad now!! ' );
+    score--;
 
 }
 
 if(happy=='y'){
     alert('Im so happy for me!!' );
-
-} else if (happy=='n'){
+    score++;
+}else if(happy=='n'){
     alert('Its worries dude, im sad now!!' );
+    score--;
 
 }
 
@@ -105,31 +119,170 @@ if(happy=='y'){
 
  if(stay=='yes'){
     alert('yes, scary from corona' );
-
-} else if (stay=='no'){
+    score++;
+}else if(stay=='no'){
     alert('no im home, try again ' );
+    score--;
 
 }
 
 if(stay=='y'){
     alert('yes, scary from corona' );
-
-} else if (stay=='n'){
+    score++;
+}else if(stay=='n'){
     alert('no im home, try again ' );
-
+    score--;
 }
  
-    alert('welcome our site ' +userName+  ' have a nice day!'); 
+alert('now it\'s another way to have fun! ');
+let  i=0;
+
+for (i=0; i<5; i++){
+
+let guess=prompt("  Write down guessing number that  between (1 - 15) ");
 
 
-// if((place=='yes'&&mnsf=='yes')&&(nesCafe=='yes'&&stay=='yes')){
-//  alert(' Welcome  ' +userName+ ' your old '  +age+ ' happy to feeling that, you love Mansaf, nesCafe,also your safe on home    ')
+if(guess>13){
 
-// }else if((place=='yes'&&mnsf=='no')&&(nesCafe=='yes'&&stay=='yes')){
-//     alert(' Welcome  ' +userName+ ' your old '  +age+ ' happy to feeling that, you love Mansaf, nesCafe,also your safe on home    ')
-   
+  guess=prompt('too high answer! guess again ' );
+} else if(guess<13){
+    guess=prompt('too low  answer! guess again ');
 
+}else if(guess==13){
+    guess=prompt('OH MY GOD, ITS FULLY CORRECT');
+break;
+
+} else {
+  alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ')
+}
+console.log(guess);
+}
+
+ let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
+alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
+
+
+for(let i=0; i<5;i++){
+    console.log(foods);
+    if (foods='burger'){
+       alert=('its not correct try again');
+
+    } else if(foods='steek'){
+       alert=('correct answer man!');
+        break;
+    }else if(foods='pizza'){
+        alert=('its not correct try again');
+    }else if(foods='mansaf'){
+        alert=('its not correct try again');
+    }else if(foods='nodels'){
+        alert=('its not correct try again');
+
+    }else if(foods='meet'){
+        alert=('its not correct try again');
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+     alert=('the correct answer is 13 and your score ' +score );
+
+
+    alert=('welcome our site ' +userName+  ' have a nice day!'); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+loops: repeat code for an amount og times without copy pasting the same code
+for loop : when we know how many times we need to repeat 
+
+
+
+}
+
+break : to stop loop
+continue : to skip the iteration  تجاوز هذي القيمة
+if(i==3){
+    continue
+}
+if you dont know how many times you will run the code 
+
+let userName=prompt('what is your name');
+
+while(!userName){                           عشان نعيد الجملو لحتئ يجاوب
+userName(!userName)('pleas write something');
+}
+    let grades=[100,50,77,66,33,22,10];
+    console.log('whole array' ,grades);
+    console.log('first element ',grade[0]); => 100
+// print index  of an element 
+    console.log(' get index if 22, grades.index(22)); =>5
+
+    index : is the position of element
+    add element at the end of value
+grades.push(150);
+    to remove an element from th end
+    grades.pop();
+
+    confirm; ok ccancel bottun
+*/
+
+// // 1
+// let userName=prompt('whats your name');
+// while(!userName){
+//     userName=prompt('please write something')
 // }
 
+// // 2
+
+// alert('Hello' +userName+ 'glade to meet you here');
+ 
+// let human=prompt('Im i a human?')
+// let score=0; 
+// human=human.toLowerCase
+// if (human==='yes' || human==='y'){
+//     alert('nice job dude!');
 
 
+// } else if ( human==='no' || human==='n'){
+//     alert('thanks alot')    
+// } else{
+//     alert('pleas answe yes/y OR no/n');
+// }
+
+// // 3
+
+// let horsess=prompt('dos pug faly ?');
+
+// // 4
+// alert('Thank you for playing my little game ' +userName+\n   ' your score is ' +score+ );
+
+// // 5
+
+
+
+// do while: 
+// let i=0;
+// do{
+//     console.log(i);
+//     i+;
+// }while (i<0);
