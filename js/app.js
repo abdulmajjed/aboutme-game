@@ -144,12 +144,12 @@ let guess=prompt("  Write down guessing number that  between (1 - 15) ");
 
 if(guess>13){
 
-  guess=prompt('too high answer! guess again ' );
+  alert('too high answer! guess again ' );
 } else if(guess<13){
-    guess=prompt('too low  answer! guess again ');
+   alert('too low  answer! guess again ');
 
 }else if(guess==13){
-    guess=prompt('OH MY GOD, ITS FULLY CORRECT');
+    alert('OH MY GOD, ITS FULLY CORRECT');
 break;
 
 } else {
@@ -159,30 +159,21 @@ console.log(guess);
 }
 
  let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
-alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
+// alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
 
 
-for(let i=0; i<5;i++){
-    console.log(foods);
-    if (foods='burger'){
-       alert=('its not correct try again');
-
-    } else if(foods='steek'){
-       alert=('correct answer man!');
+for(let i=0; i<foods.length;i++){
+    let guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ')
+    if(guess == 'steek' && i < 5){
+        score++;
+        alert('you are right');
         break;
-    }else if(foods='pizza'){
-        alert=('its not correct try again');
-    }else if(foods='mansaf'){
-        alert=('its not correct try again');
-    }else if(foods='nodels'){
-        alert=('its not correct try again');
-
-    }else if(foods='meet'){
-        alert=('its not correct try again');
+    }else if(i == 5){
+        break;
+    }else{
+        alert(`sorry it's wrong ${guess}`);
+        guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
     }
-
-
-
 
 }
 
@@ -191,22 +182,8 @@ for(let i=0; i<5;i++){
 
 
 
-
-
-     alert=('the correct answer is 13 and your score ' +score );
-
-
-    alert=('welcome our site ' +userName+  ' have a nice day!'); 
-
-
-
-
-
-
-
-
-
-
+alert('the correct answer is 13 and your score ' +score );
+alert('welcome our site ' +userName+  ' have a nice day!'); 
 
 
 
