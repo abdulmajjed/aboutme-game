@@ -152,8 +152,12 @@ if(stay=='y'){
 }
 return(stay);
 }
+
  
 alert('now it\'s another way to have fun! ');
+function  guessing(guess) {
+    
+
 let  i=0;
 
 for (i=0; i<5; i++){
@@ -172,10 +176,33 @@ if(guess>13){
 break;
 
 } else {
-  alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ')
+  alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ');
 }
+}return(guess);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
 // alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
