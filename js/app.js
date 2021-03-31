@@ -3,8 +3,8 @@
 
   let userName=prompt('what\'s your name ?');
  alert(' Hello '  +userName+  ' my name\'s Abdulmajjed!'); 
- userName=(userName.toLowerCase());
-alert('let\'s try to have some fun!')
+//  userName=(userName.toLowerCase());
+alert('let\'s try to have some fun!\n qustions with yes/y or no/n')
   let place=prompt('I\'m from Jordan, are you?');
   place=(place.toLowerCase());
 
@@ -155,16 +155,18 @@ break;
 } else {
   alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ')
 }
-console.log(guess);
+
 }
 
  let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
 // alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
 
-
+let attempts =6;
+// for(let j=0; j<attempts;j++){
+let guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ')
 for(let i=0; i<foods.length;i++){
-    let guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ')
-    if(guess == 'steek' && i < 5){
+       console.log(guess); 
+    if(guess == 'steek' && guess){
         score++;
         alert('you are right');
         break;
@@ -174,7 +176,6 @@ for(let i=0; i<foods.length;i++){
         alert(`sorry it's wrong ${guess}`);
         guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
     }
-
 }
 
 
@@ -263,3 +264,4 @@ grades.push(150);
 //     console.log(i);
 //     i+;
 // }while (i<0);
+

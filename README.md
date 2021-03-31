@@ -25,13 +25,3 @@ _______________________
 * General Secondary Certificate of Education ( Al-Tawjihi), 2016
  
 _______________________________________________________________________________________________
-> How did this go, overall?
-
-its going great, i got some problems but i solve it with google.
-> What observations or questions do you have about what you’ve learned so far?
-
-it was not clear at first time, but every thing gonna be alright.
-> How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
-
-2 hours, i thought it take less than 1/2 of the actual time.
-
