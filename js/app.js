@@ -187,42 +187,28 @@ break;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
 // alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
 
 let attempts =6;
 // for(let j=0; j<attempts;j++){
-let guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ')
+let fav= prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
+ function diner(fav) {
+    
 for(let i=0; i<foods.length;i++){
-       console.log(guess); 
-    if(guess == 'steek' && guess){
+       console.log(fav); 
+    if(fav == 'steek' && fav){
         score++;
         alert('you are right');
         break;
     }else if(i == 5){
         break;
     }else{
-        alert(`sorry it's wrong ${guess}`);
-        guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
+        alert(`sorry it's wrong ${fav}`);
+       fav = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
     }
-}
+
+}return(fav);}
 
 
 
