@@ -11,13 +11,13 @@
 
 
  let place=prompt('I\'m from Jordan, are you?');
-   place=place.toLowerCase();
- function theplace (place) {
+     place=place.toLowerCase();
+ function thePlace (place) {
     if(place==='yes' || place==='y'){alert("welcome");score++;}
     else if (place==='no' || place==='n'){alert("nice to meet you");}
     else { alert(" please choose yes or no"); }
- return(place);}
- theplace(place);
+return(place);}
+ thePlace(place);
 
 
 
@@ -53,7 +53,6 @@ function theCoffe (nesCafe) {
 }else if(nesCafe=='no'){
     alert('its really my favorite' );
   
-
 }
 
 if(nesCafe=='y'){
@@ -61,24 +60,26 @@ if(nesCafe=='y'){
     score++;
 }else if(place=='n'){
     alert('its really my favorite ' );
- 
 
 }
 return(nesCafe);
 }
 
+
+
+
  let mnsf=prompt(' is Mansaaf my main lunch on Friday ?');
 //  console.log(mnsf);
- mnsf=(mnsf.toLowerCase());
+ mnsf=mnsf.toLowerCase();
 
-
+function theFood(mnsf) {
+    
  if(mnsf=='yes'){
     alert('correct, So on Friday Ill come to you  !!' );
     score++; 
 }else if(place=='no'){
     alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
-    score--;
-
+    
 }
 
 if(mnsf=='y'){
@@ -86,20 +87,22 @@ if(mnsf=='y'){
     score++;
 }else if(place=='n'){
     alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
-    score--;
+    
 
+}
+return(mnsf);
 }
 
  let happy=prompt('If i got 10 out of 10, you think im happy or not?');
 
- happy=(happy.toLowerCase());
+ happy=happy.toLowerCase();
 // console.log(happy);
  if(happy=='yes'){
     alert('Im so happy for me!!' );
     score++;
 }else if(happy=='no'){
     alert('Its worries dude, im sad now!! ' );
-    score--;
+   
 
 }
 
