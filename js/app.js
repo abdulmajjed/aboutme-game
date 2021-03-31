@@ -1,43 +1,31 @@
 'use strict';
  let name='Abulmajjed';
-
-  let userName=prompt('what\'s your name ?');
+ let userName=prompt('what\'s your name ?');
  alert(' Hello '  +userName+  ' my name\'s Abdulmajjed!'); 
-//  userName=(userName.toLowerCase());
+ //  userName=(userName.toLowerCase());
  alert('let\'s try to have some fun!\n qustions with yes/y or no/n');
-
- 
-    
-
- let place=prompt('I\'m from Jordan, are you?');
-   place=(place.toLowerCase());
-
  let score=0;
 
-function theplace (place) {
-   
+ 
 
-if(place==='yes' || place==='y'){
-    alert("welcome");
-    score++;}
-    else if (place==='no' || place==='n')
-    {alert("nice to meet you");}
+
+
+ let place=prompt('I\'m from Jordan, are you?');
+   place=place.toLowerCase();
+ function theplace (place) {
+    if(place==='yes' || place==='y'){alert("welcome");score++;}
+    else if (place==='no' || place==='n'){alert("nice to meet you");}
     else { alert(" please choose yes or no"); }
- return(place);
-}
+ return(place);}
  theplace(place);
 
 
-// place=(place.toLowerCase());
 
  let age=prompt('whats your age?');
 //  console.log('before',typeof age);
    age=parseInt(age);
 //  console.log('after'+age, typeof age);
-
-
-
-if(place=='yes'){
+ if(place=='yes'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
     score++;
 }
@@ -50,23 +38,21 @@ if(place=='y'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
     score++;
 }else if(place=='n'){
-    alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );
-
-}
+    alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );}
 
 
 
 
  let nesCafe=prompt('Is NesCafe my favorite Coffie?');
 //  console.log(nesCafe);
-nesCafe=(nesCafe.toLowerCase());
-
+ nesCafe=nesCafe.toLowerCase();
+function theCoffe (nesCafe) {  
  if(nesCafe=='yes'){
     alert('OMG,got me !!' );
     score++;
 }else if(nesCafe=='no'){
     alert('its really my favorite' );
-    score--;
+  
 
 }
 
@@ -75,8 +61,10 @@ if(nesCafe=='y'){
     score++;
 }else if(place=='n'){
     alert('its really my favorite ' );
-    score--;
+ 
 
+}
+return(nesCafe);
 }
 
  let mnsf=prompt(' is Mansaaf my main lunch on Friday ?');
