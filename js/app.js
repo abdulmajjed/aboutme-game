@@ -118,24 +118,28 @@ if(happy=='y'){
 }else if(happy=='n'){
     alert('Its worries dude, im sad now!!' );
     
-
 }
 return(happy);
  }
 
 
 
+
+
+
  let stay=prompt('cause of COVID-19, Im at Home?' );
 //  console.log(stay);
- stay=(stay.toLowerCase());
+ stay=stay.toLowerCase();
 
+function myStay (stay) {
+    
 
  if(stay=='yes'){
     alert('yes, scary from corona' );
     score++;
 }else if(stay=='no'){
     alert('no im home, try again ' );
-    score--;
+   
 
 }
 
@@ -144,7 +148,9 @@ if(stay=='y'){
     score++;
 }else if(stay=='n'){
     alert('no im home, try again ' );
-    score--;
+   
+}
+return(stay);
 }
  
 alert('now it\'s another way to have fun! ');
