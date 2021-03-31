@@ -4,15 +4,29 @@
   let userName=prompt('what\'s your name ?');
  alert(' Hello '  +userName+  ' my name\'s Abdulmajjed!'); 
 //  userName=(userName.toLowerCase());
-alert('let\'s try to have some fun!\n qustions with yes/y or no/n')
-  let place=prompt('I\'m from Jordan, are you?');
-  place=(place.toLowerCase());
+ alert('let\'s try to have some fun!\n qustions with yes/y or no/n');
 
-let score=0;
+ 
+    
+
+ let place=prompt('I\'m from Jordan, are you?');
+   place=(place.toLowerCase());
+
+ let score=0;
+
+function theplace (place) {
+   
+
 if(place==='yes' || place==='y'){
-    score++;
-}else(place==='no' || place==='n')
-    score--;
+    alert("welcome");
+    score++;}
+    else if (place==='no' || place==='n')
+    {alert("nice to meet you");}
+    else { alert(" please choose yes or no"); }
+ return(place);
+}
+ theplace(place);
+
 
 // place=(place.toLowerCase());
 
