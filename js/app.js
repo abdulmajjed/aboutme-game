@@ -93,9 +93,15 @@ if(mnsf=='y'){
 return(mnsf);
 }
 
+
+
+
  let happy=prompt('If i got 10 out of 10, you think im happy or not?');
 
  happy=happy.toLowerCase();
+ function status(happy) {
+     
+
 // console.log(happy);
  if(happy=='yes'){
     alert('Im so happy for me!!' );
@@ -111,9 +117,11 @@ if(happy=='y'){
     score++;
 }else if(happy=='n'){
     alert('Its worries dude, im sad now!!' );
-    score--;
+    
 
 }
+return(happy);
+ }
 
 
 
