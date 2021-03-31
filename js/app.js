@@ -1,29 +1,31 @@
 'use strict';
  let name='Abulmajjed';
-
-  let userName=prompt('what\'s your name ?');
+ let userName=prompt('what\'s your name ?');
  alert(' Hello '  +userName+  ' my name\'s Abdulmajjed!'); 
-//  userName=(userName.toLowerCase());
-alert('let\'s try to have some fun!\n qustions with yes/y or no/n')
-  let place=prompt('I\'m from Jordan, are you?');
-  place=(place.toLowerCase());
+ //  userName=(userName.toLowerCase());
+ alert('let\'s try to have some fun!\n qustions with yes/y or no/n');
+ let score=0;
 
-let score=0;
-if(place==='yes' || place==='y'){
-    score++;
-}else(place==='no' || place==='n')
-    score--;
+ 
 
-// place=(place.toLowerCase());
+
+
+ let place=prompt('I\'m from Jordan, are you?');
+     place=place.toLowerCase();
+ function thePlace (place) {
+    if(place==='yes' || place==='y'){alert("welcome");score++;}
+    else if (place==='no' || place==='n'){alert("nice to meet you");}
+    else { alert(" please choose yes or no"); }
+return(place);}
+ thePlace(place);
+
+
 
  let age=prompt('whats your age?');
 //  console.log('before',typeof age);
    age=parseInt(age);
 //  console.log('after'+age, typeof age);
-
-
-
-if(place=='yes'){
+ if(place=='yes'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
     score++;
 }
@@ -36,24 +38,21 @@ if(place=='y'){
     alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are from jordan ' );
     score++;
 }else if(place=='n'){
-    alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );
-
-}
+    alert(' So your name is ' +userName+ ' and your ' +age+ ' years old !! , also you are NOT from jordan!! ' );}
 
 
 
 
  let nesCafe=prompt('Is NesCafe my favorite Coffie?');
 //  console.log(nesCafe);
-nesCafe=(nesCafe.toLowerCase());
-
+ nesCafe=nesCafe.toLowerCase();
+function theCoffe (nesCafe) {  
  if(nesCafe=='yes'){
     alert('OMG,got me !!' );
     score++;
 }else if(nesCafe=='no'){
     alert('its really my favorite' );
-    score--;
-
+  
 }
 
 if(nesCafe=='y'){
@@ -61,22 +60,26 @@ if(nesCafe=='y'){
     score++;
 }else if(place=='n'){
     alert('its really my favorite ' );
-    score--;
 
 }
+return(nesCafe);
+}
+
+
+
 
  let mnsf=prompt(' is Mansaaf my main lunch on Friday ?');
 //  console.log(mnsf);
- mnsf=(mnsf.toLowerCase());
+ mnsf=mnsf.toLowerCase();
 
-
+function theFood(mnsf) {
+    
  if(mnsf=='yes'){
     alert('correct, So on Friday Ill come to you  !!' );
     score++; 
 }else if(place=='no'){
     alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
-    score--;
-
+    
 }
 
 if(mnsf=='y'){
@@ -84,20 +87,28 @@ if(mnsf=='y'){
     score++;
 }else if(place=='n'){
     alert('okay, then Friday nice day to meet you and eat Mansaf on your cost  !! ' );
-    score--;
+    
 
 }
+return(mnsf);
+}
+
+
+
 
  let happy=prompt('If i got 10 out of 10, you think im happy or not?');
 
- happy=(happy.toLowerCase());
+ happy=happy.toLowerCase();
+ function status(happy) {
+     
+
 // console.log(happy);
  if(happy=='yes'){
     alert('Im so happy for me!!' );
     score++;
 }else if(happy=='no'){
     alert('Its worries dude, im sad now!! ' );
-    score--;
+   
 
 }
 
@@ -106,23 +117,29 @@ if(happy=='y'){
     score++;
 }else if(happy=='n'){
     alert('Its worries dude, im sad now!!' );
-    score--;
-
+    
 }
+return(happy);
+ }
+
+
+
 
 
 
  let stay=prompt('cause of COVID-19, Im at Home?' );
 //  console.log(stay);
- stay=(stay.toLowerCase());
+ stay=stay.toLowerCase();
 
+function myStay (stay) {
+    
 
  if(stay=='yes'){
     alert('yes, scary from corona' );
     score++;
 }else if(stay=='no'){
     alert('no im home, try again ' );
-    score--;
+   
 
 }
 
@@ -131,10 +148,16 @@ if(stay=='y'){
     score++;
 }else if(stay=='n'){
     alert('no im home, try again ' );
-    score--;
+   
 }
+return(stay);
+}
+
  
 alert('now it\'s another way to have fun! ');
+function  guessing(guess) {
+    
+
 let  i=0;
 
 for (i=0; i<5; i++){
@@ -153,30 +176,39 @@ if(guess>13){
 break;
 
 } else {
-  alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ')
+  alert('The first place is odd and the second is odd,\n and the second place is the sum of the first place with the next in order\n guess again ');
 }
+}return(guess);
 
 }
+
+
+
+
+
 
  let foods=[ 'burger', 'steek', 'pizza ', 'mansaf' , ' nodels ', ' meet'];
 // alert=('now time to guess which kind of foods i like\n  choose between =>>  burger steek pizza  mansaf  nodels   meet ');
 
 let attempts =6;
 // for(let j=0; j<attempts;j++){
-let guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ')
+let fav= prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
+ function diner(fav) {
+    
 for(let i=0; i<foods.length;i++){
-       console.log(guess); 
-    if(guess == 'steek' && guess){
+       console.log(fav); 
+    if(fav == 'steek' && fav){
         score++;
         alert('you are right');
         break;
     }else if(i == 5){
         break;
     }else{
-        alert(`sorry it's wrong ${guess}`);
-        guess = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
+        alert(`sorry it's wrong ${fav}`);
+       fav = prompt('guess my fav food:  burger steek pizza  mansaf  nodels   meet ');
     }
-}
+
+}return(fav);}
 
 
 
