@@ -42,12 +42,14 @@ header {
     list-style-image : url():}
     li{ margin : 10px 0px 0 px 0px: }  
  }*/
+ *{margin: 50px;}
 header{
     color: rgba(49, 14, 14, 0.925);
     background-color:rgba(126, 126, 126, 0.568);
     height: 50px;
     text-align: center;
     font-size: 20px;
+    
     } 
 
 
@@ -60,12 +62,12 @@ header{
 
 }
 
-main h3 p b{
+main h3 p{
      position: fixed;
      top: 0px;
      left: 50px;
      padding:10px;
-     margin: 0px;
+     /* margin: 0px; */
      width: 100%;
      background-color: gray;
 
