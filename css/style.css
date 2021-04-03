@@ -9,6 +9,7 @@ header{
     font-family: ui-monospace;
     
 }
+
 element.style {
     FONT-WEIGHT: 500;
     background-color: grey;
@@ -31,6 +32,11 @@ body nav ul li {
     margin: 5px;
     background-colorr: gba(90, 72, 72, 0.089) ;
 
+}
+body {
+    font-size: 100%;
+    font: inherit;
+    background-color: silver;
 }
 
 .obj{
@@ -69,17 +75,10 @@ footer p{
     vertical-align: middle;
     line-height: 100px;
     font-weight: 900;
-        background-color: rgba(126, 126, 126, 0.568);
+    background-color: rgba(126, 126, 126, 0.568);
 }
 footer {
     height: 100px;
-    color: rgba(87, 11, 4, 0.986);
-
+    color: rgba(0, 0, 0, 0.644);
 }
 
-body {
-    font-size: 100%;
-    font: inherit;
-    background-color: silver;
-    /* background-image: url("img/back.jpg"); */
-}
