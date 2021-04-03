@@ -1,107 +1,85 @@
-/* 
-head{
-font: size 50px; 
-text-align: center;
-color: rgb(23, 197, 23);
 
-}
-body{
-    color: rgb(14, 1, 1);
-}
-
-header nav{
-    float:right;
-    width: 40%;
-    margin-top: 5px;
-    font-size: 25px;
-   color:rgb(92, 41, 0);
-}
-
-
-
-/* 
- 
-/* /* 
-header {
-    float:right;
-    width: 40%;
-    margin-top: 5px;
-    font-size: 25px;
-   color:rgb(92, 41, 0);
-}  
-
-   header nav{
-    float:right;
-    width: 25%;
-    margin-top: 5px;
-    font-size: 25px;
-   color:rgb(92, 41, 0);
-
-
- ul {
-    list-style-image : url():}
-    li{ margin : 10px 0px 0 px 0px: }  
- }*/
- *{margin: 50px;}
+*{margin: 50px;}
 header{
-    color: rgba(49, 14, 14, 0.925);
-    background-color:rgba(126, 126, 126, 0.568);
-    height: 50px;
     text-align: center;
-    font-size: 20px;
+    margin: 3px;
+    background-color: gray;
+    font-size: larger;
+    font-weight: revert;
+    font-family: ui-monospace;
     
-    } 
+}
+element.style {
+    FONT-WEIGHT: 500;
+    background-color: grey;
+    margin: -50px;
+    font-family: system-ui;
+    font-size: 18px;
+    margin-top: auto;
+    margin: 0px;
+    block-size: 0px;
+
+}
+p.obj {
+    margin: 3px;
+} 
 
 
-  body nav ul li {
+body nav ul li {
     
     display: inline-block;
-    margin-left: 150px;
-    background-color:rgba(90, 72, 72, 0.089) ;
-
+    margin: 5px;
+    background-colorr: gba(90, 72, 72, 0.089) ;
 
 }
 
-main h3 p{
-     position: fixed;
-     top: 0px;
-     left: 50px;
-     padding:10px;
-     /* margin: 0px; */
-     width: 100%;
-     background-color: gray;
+.obj{
+    padding:10px;
+    width: 100%;
+    background-color: lightgrey;
+    margin: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 
- }
+}
+.line{
+    background-color: rgba(139, 138, 138, 0.692);
+    margin:-45px;
+    font-family: cursive;
+    width: 100px;
+    height: 100px;
+    animation-name:line;
+    animation-duration: 10s;
+    animation-iteration-count: 100;
 
-header main ol li{
-    color: rgb(92, 41, 0);
-    background-color:  #a6a6a4;
-    height: 20px;
-    }
 
- p.obj {
-     margin: 100px;
- } 
+
+}
+@keyframes line{
+    0%   {background-color: rgb(110, 155, 96);}
+    25%  {background-color: rgb(98, 98, 70);}
+    50%  {background-color: rgb(104, 104, 144);}
+    100% {background-color: rgb(185, 219, 185);}
+  }
 
 footer p{
     font-size: 40px;
     text-align: center;
-      vertical-align: middle;
-      line-height: 100px;
-      font-weight: 900;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: 900;
         background-color: rgba(126, 126, 126, 0.568);
 }
 footer {
     height: 100px;
     color: rgba(87, 11, 4, 0.986);
-  
+
 }
 
-main ol li{ 
-      list-style-type:inherit;
-
-      
-
-  }
-  
-
+body {
+    font-size: 100%;
+    font: inherit;
+    background-color: silver;
+    /* background-image: url("img/back.jpg"); */
+}
